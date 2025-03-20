@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add book</title>
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+</style>
+</head>
+<body>
+  <div class="container">
+        <h2>Add Book</h2>
+        <form action="addBook" method="post">
+            <label for="bcode">Book Code:</label>
+            <input type="text" id="bcode" name="bcode" required>
+
+            <label for="bname">Book Name:</label>
+            <input type="text" id="bname" name="bname" required>
+
+            <label for="bauthor">Book Author:</label>
+            <input type="text" id="bauthor" name="bauthor" required>
+
+            <label for="bprice">Book Price:</label>
+            <input type="number" id="bprice" name="bprice" required>
+
+            <label for="bquantity">Book Quantity:</label>
+            <input type="text" id="bquantity" name="bquantity" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

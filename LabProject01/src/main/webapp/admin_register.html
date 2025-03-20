@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+        <h2>Admin Registration</h2>
+        <form action="register" method="post">
+            <label for="username">Admin Name:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="apass">Password:</label>
+            <input type="text" id="apass" name="apass" required>
+            <label for="afname">First Name:</label>
+            <input type="text" id="afname" name="afname" required>
+            <label for="alname">Last Name:</label>
+            <input type="text" id="alname" name="alname" required>
+            <label for="amid">Email:</label>
+            <input type="text" id="amid" name="amid" required>
+            <label for="aphno">Phone Number:</label>
+            <input type="text" id="aphno" name="aphno" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
